@@ -32,7 +32,6 @@ l1, = axs1.plot(weak_mesh.x(1e-5), weak_mesh.y(1e3), '-', markersize=1, color='#
 axs1.set_title("Oscillations in vacuum and normal matter")
 axs1.set_ylabel("rho(e, μ) x 1e-3")
 axs1.grid(True)
-axs1.get_yaxis().get_major_formatter().set_useOffset(1e-3)
 axs1.yaxis.set_major_formatter(ticker.FormatStrFormatter('%0.2f'))
 
 axs1.legend([l1, ], ["Normal matter, V = {} eV".format(Ve/eV_2_erg),])
